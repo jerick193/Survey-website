@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Survey Form</title>
+</head>
+<body>
+  <style>
+    #description-section{
+     
+    text-align:center;
+    padding-top:5%;
+    color:black;
+      
+    }
+    body{
+      background-color:#2a2a4b;
+    }
+    
+    form{
+    background-color:#2a2a4b;
+    
+    }
+    #main{
+      padding-right:25%;
+      padding-left: 25%;
+      background-color:#C4CBF2;
+      color:white;
+    }
+   #survey-form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    #definetly-button{
+      display: flex;
+      flex-derection:column;
+      
+    }
+    
+    #radio-buttons{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    
+    #dropdown{
+      background-image: linear-gradient(to right, pink, lightgreen);
+    
+    }
+    
+    textarea{
+      background-image: linear-gradient(to right, pink, lightgreen);
+    }
+    
+    #submit{
+      width: 25%;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      
+    }
+    
+    footer{
+      text-align:center;
+      color:black;
+      
+    }
+    
+    
+    
+    
+    input:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
+      
+      
+      
+      
+      
+  </style>
+  <div id="main">
+    <div id="survey">
+      <div id="description-section">
+      <h1 id="title">Survey form</h1>
+      <p id="description">Thank you for taking the time to help us improve</p>
+      </div>
+      <form id="survey-form">
+        <label for="name" id="name-label">First name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <label for="email" id="email-label">Email</label>
+        <input type="email" for="email" id="email" placeholder="Enter your Email" required>
+        <label for="number" id="number-label">Age</label>
+        <input type="number" for="number" id="number" min="10" max="100" placeholder="Enter your age" required>
+        
+        
+        <label for="dropdown-label">Which option best describes your current role?</label>
+        <select id="dropdown">
+          <option value="">Select Current Role</option>
+          <option value="Student">Student</option>
+          <option value="full time job">Full Time Job</option>
+          <option value="Full Time Learner">Full Time Learner</option>
+          <option value="Prefer Not To Say">Prefer Not To Say</option>
+          <option value="Other">Other</option>
+          
+   
+          
+        </select> 
+        <label for="radio-label">Would you recommend (something) to a friend?</label>
+        <div id="radio-buttons">
+        
+        <div style="display: flex;"> 
+        <input type='radio' name="radio-buttons" value="definetly" id="definetly-button">Definetly</input></div>
+        <div>
+        <input type="radio" name="radio-buttons" value="maybe" id="maybe-button">Maybe</input> 
+           </div>
+      <div>
+      <input type="radio" name="radio-buttons" value="not sure" id="not-sure-button">Not Sure</input>
+    </div>
+        
+      
+    
+        <label for="checkboxes-label">What would you like to see improved?</label>
+        <div style="display: flex;flex-direction:row">
+        <input type="checkbox" name="option1" value="option1">(option 1)</input>
+        </div>
+        <div style="display:flex;flex-direction:row">
+        <input type="checkbox" name="option2" value="option2">(option 2)</input> 
+        </div>
+        <div style="display:flex;felx-direction:row;">
+        <input type="checkbox" name="option3" value="option3">(option 3)</input>
+        </div>  
+        <div style="display:flex;flex-direction:row">
+          <input type="checkbox" name="option4" value="option4">(option4)</input>
+        </div>
+        
+        <label for="textarea">Any comments or suggestions?</label>
+        <textarea id="textarea" name="textarea" row=20 column=50 placeholder="Enter yor comments here..."></textarea>
+        
+</div>
+
+        </form>
+      
+    
+  </div>
+       <input id="submit" type="submit" value="submit"></submit>
+
+
+  </body>
+
+  <footer>copyright 2021 Jerick Abril. All rights   reserverd.</footer>
+</html>
